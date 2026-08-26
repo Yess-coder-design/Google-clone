@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #202124;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 14px 6px 18px;
+    font-size: 14px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+header a {
+    color: #202124;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+.apps {
+    font-size: 25px;
+    cursor: pointer;
+    color: #5f6368;
+}
+
+.login {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 24px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.login:hover {
+    background: #1765cc;
+}
+
+/* =====================
+   CONTENIDO PRINCIPAL
+===================== */
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+/* LOGO */
+
+.logo {
+    font-size: 92px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    margin-bottom: 28px;
+}
+
+.blue {
+    color: #4285f4;
+}
+
+.red {
+    color: #ea4335;
+}
+
+.yellow {
+    color: #fbbc05;
+}
+
+.green {
+    color: #34a853;
+}
+
+/* =====================
+   BARRA DE BÚSQUEDA
+===================== */
+
+.search-container {
+    width: 584px;
+    height: 46px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    transition: box-shadow 0.2s;
+}
+
+.search-container:hover,
+.search-container:focus-within {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: transparent;
+}
+
+.search-icon {
+    font-size: 26px;
+    color: #9aa0a6;
+    margin-right: 12px;
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #202124;
+}
+
+.mic,
+.camera {
+    font-size: 18px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+
+/* =====================
+   BOTONES
+===================== */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.buttons button {
+    background: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* =====================
+   IDIOMA
+===================== */
+
+.language {
+    margin-top: 28px;
+    font-size: 13px;
+}
+
+.language a {
+    color: #1a0dab;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.language a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer {
+    background: #f2f2f2;
+    color: #202124;
+    font-size: 14px;
+}
+
+.country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.footer-links div {
+    display: flex;
+    gap: 28px;
+}
+
+.footer-links a {
+    color: #202124;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 650px) {
+
+    main {
+        padding-top: 80px;
+    }
+
+    .logo {
+        font-size: 70px;
+    }
+
+    .search-container {
+        width: 90vw;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-links div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
